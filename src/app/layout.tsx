@@ -28,6 +28,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${bebas.variable} ${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-white text-[#0c1b2a] font-sans">
         {children}
