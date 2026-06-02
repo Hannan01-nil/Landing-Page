@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const bebas = Bebas_Neue({
+  variable: "--font-bebas",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: "400",
 });
 
 const inter = Inter({
@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${inter.variable} h-full antialiased`}
+      className={`${bebas.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white font-sans">
+      <body className="min-h-full flex flex-col bg-white text-[#0c1b2a] font-sans">
         {children}
       </body>
     </html>

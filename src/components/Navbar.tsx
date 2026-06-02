@@ -1,91 +1,97 @@
 "use client";
 
 import { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
-import { motion, AnimatePresence } from "framer-motion";
+import { HiBars3, HiMagnifyingGlass, HiShoppingCart, HiXMark } from "react-icons/hi2";
 
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Sports", href: "#sports" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "Players", href: "#players" },
+  { label: "Matches", href: "#matches" },
   { label: "News", href: "#news" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "#about" },
+  { label: "Subscribe", href: "#subscribe" },
 ];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          <a href="#home" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">K</span>
-            </div>
-            <span className="text-xl font-bold text-white tracking-tight">
-              KHELO
-            </span>
+    <>
+      <header className="fixed inset-x-0 top-0 z-50 h-20 bg-[#0b1b2a]/95 backdrop-blur-sm">
+        <div className="container-wide flex h-full items-center justify-between">
+          <a href="#home" className="display text-4xl leading-none text-white md:text-5xl">
+            K
           </a>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <nav className="hidden items-center gap-8 text-sm font-semibold text-white/70 md:flex">
             {navLinks.map((link) => (
               <a
-                key={link.label}
+                key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-300 hover:text-red-500 transition-colors"
+                className="transition-colors hover:text-white"
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition-colors"
-            >
-              Join Now
-            </a>
-          </div>
+          </nav>
 
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white p-2"
-          >
-            {isOpen ? <HiX size={24} /> : <HiMenu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#0a0a0a] border-t border-white/5"
-          >
-            <div className="px-4 py-4 space-y-3">
-              {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block text-sm font-medium text-gray-300 hover:text-red-500 transition-colors py-2"
-                >
-                  {link.label}
-                </a>
-              ))}
-              <a
-                href="#contact"
-                onClick={() => setIsOpen(false)}
-                className="block w-full text-center px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-sm font-semibold rounded-lg transition-colors"
+          <div className="flex items-center gap-3">
+            <div className="hidden items-center gap-3 md:flex">
+              <button
+                aria-label="Search"
+                className="grid size-9 place-items-center rounded-full border border-white/20 text-white/70 transition-colors hover:border-white/50 hover:text-white"
               >
-                Join Now
-              </a>
+                <HiMagnifyingGlass className="text-sm" />
+              </button>
+              <button
+                aria-label="Cart"
+                className="grid size-9 place-items-center rounded-full border border-white/20 text-white/70 transition-colors hover:border-white/50 hover:text-white"
+              >
+                <HiShoppingCart className="text-sm" />
+              </button>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+            <button
+              aria-label="Open menu"
+              className="grid size-9 place-items-center rounded-full bg-white text-[#0b1b2a] transition-colors hover:bg-white/90 md:hidden"
+              onClick={() => setOpen(true)}
+            >
+              <HiBars3 className="text-sm" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {open && (
+        <div className="fixed inset-0 z-50 flex flex-col bg-[#0b1b2a] text-white md:hidden">
+          <div className="flex h-20 items-center justify-between px-7">
+            <a
+              href="#home"
+              className="display text-4xl leading-none"
+              onClick={() => setOpen(false)}
+            >
+              K
+            </a>
+            <button
+              aria-label="Close menu"
+              className="grid size-9 place-items-center rounded-full bg-white text-[#0b1b2a]"
+              onClick={() => setOpen(false)}
+            >
+              <HiXMark className="text-sm" />
+            </button>
+          </div>
+          <nav className="flex flex-1 flex-col items-center justify-center gap-8 text-3xl">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="display transition-colors hover:text-white/60"
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
+    </>
   );
 }

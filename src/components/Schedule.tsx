@@ -1,128 +1,96 @@
-"use client";
+import { HiArrowUpRight } from "react-icons/hi2";
+import type { Match } from "@/data/types";
+import { upcomingMatch } from "@/data/matches";
 
-import { motion } from "framer-motion";
-import {
-  HiOutlineCalendar,
-  HiOutlineClock,
-  HiOutlineLocationMarker,
-} from "react-icons/hi";
+const sportColors: Record<string, string> = {
+  football: "bg-[#edf7ff]",
+  cricket: "bg-[#f0f7e6]",
+  basketball: "bg-[#ffefe6]",
+  tennis: "bg-[#e6f0f7]",
+};
 
-const matches = [
-  {
-    team1: "Khelo United",
-    team2: "City Strikers",
-    sport: "Football",
-    date: "June 15, 2026",
-    time: "7:00 PM",
-    venue: "Khelo Main Stadium",
-    score: "3 - 2",
-  },
-  {
-    team1: "Khelo Tigers",
-    team2: "Royal Challengers",
-    sport: "Cricket",
-    date: "June 18, 2026",
-    time: "4:00 PM",
-    venue: "Cricket Ground A",
-    score: "185/4",
-  },
-  {
-    team1: "Khelo Hawks",
-    team2: "Valley Ballers",
-    sport: "Basketball",
-    date: "June 20, 2026",
-    time: "8:00 PM",
-    venue: "Indoor Arena",
-    score: "98 - 87",
-  },
-  {
-    team1: "Khelo Aces",
-    team2: "Net Warriors",
-    sport: "Tennis",
-    date: "June 22, 2026",
-    time: "5:00 PM",
-    venue: "Tennis Complex",
-    score: "6-3, 7-5",
-  },
-];
+const sportEmoji: Record<string, string> = {
+  football: "⚽",
+  cricket: "🏏",
+  basketball: "🏀",
+  tennis: "🎾",
+};
 
-export default function Schedule() {
+function MiniCrest({ label }: { label: string }) {
   return (
-    <section id="schedule" className="py-20 lg:py-28 bg-[#111111]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <span className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-500/40 rounded-full text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
-            Upcoming Matches
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Match{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-500">
-              Fixtures
-            </span>
-          </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Catch the latest action live. Check schedules, scores, and venues
-            for upcoming matches.
-          </p>
-        </motion.div>
+    <div className="grid size-14 place-items-center rounded-full bg-white text-[10px] font-black uppercase text-[#0b1b2a] ring-1 ring-[#cdddeb]">
+      {label.slice(0, 2)}
+    </div>
+  );
+}
 
-        <div className="space-y-4">
-          {matches.map((match, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group bg-[#1a1a1a] border border-white/5 hover:border-red-600/30 rounded-xl p-5 transition-all duration-300"
-            >
-              <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
-                <div className="flex-1">
-                  <span className="text-xs font-semibold text-red-400 uppercase tracking-wider">
-                    {match.sport}
-                  </span>
-                  <div className="flex items-center gap-4 mt-2">
-                    <span className="text-lg font-bold text-white">
-                      {match.team1}
-                    </span>
-                    <span className="text-sm font-bold text-amber-500">VS</span>
-                    <span className="text-lg font-bold text-white">
-                      {match.team2}
-                    </span>
-                  </div>
+function Countdown() {
+  const { days, hours, minutes, seconds } = upcomingMatch;
+  const items = [
+    [`${days}`, "Days"],
+    [`${hours}`.padStart(2, "0"), "Hours"],
+    [`${minutes}`.padStart(2, "0"), "Minute"],
+    [`${seconds}`.padStart(2, "0"), "Seconds"],
+  ];
+
+  return (
+    <div className="ml-auto grid w-full max-w-[610px] grid-cols-[1fr_auto_auto_auto_auto] items-center bg-white px-4 py-4 shadow-[0_0_0_1px_rgba(11,27,42,0.04)] md:px-8 md:py-5">
+      <div>
+        <p className="display text-sm text-[#0b1b2a] md:text-base">Upcoming Match</p>
+        <p className="text-[10px] text-[#9aa7b3] md:text-xs">{upcomingMatch.league}</p>
+      </div>
+      {items.map(([value, label]) => (
+        <div key={label} className="min-w-12 text-center md:min-w-16">
+          <p className="display text-lg md:text-2xl">{value}</p>
+          <p className="text-[8px] text-[#9aa7b3] md:text-[10px]">{label}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default function Schedule({ matches }: { matches: Match[] }) {
+  return (
+    <section id="matches" className="page-grid bg-white py-16 md:py-24 scroll-mt-20">
+      <div className="container-wide">
+        <div className="grid gap-6 lg:grid-cols-[0.55fr_1fr] lg:items-start lg:gap-10">
+          <div className="flex items-end gap-7">
+            <h2 className="display text-4xl leading-[0.95] text-[#0b1b2a] md:text-6xl">
+              Khelo sporting info
+              <br />
+              and updates
+            </h2>
+            <a href="#news" className="thin-btn mb-2 hidden md:inline-flex">
+              Explore All <HiArrowUpRight />
+            </a>
+          </div>
+          <Countdown />
+        </div>
+
+        <div className="mt-10 grid gap-4 md:mt-14 md:gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {matches.map((match) => (
+            <article key={`${match.league}-${match.homeTeam}`} className={`${sportColors[match.sport]} p-5 text-center md:p-7`}>
+              <span className="text-lg md:text-2xl">{sportEmoji[match.sport]}</span>
+              <h3 className="mt-1 text-xs font-bold md:text-sm">{match.league}</h3>
+              <p className="mt-1 text-[10px] text-[#8b98a5] md:text-xs">{match.date}</p>
+              <div className="mt-4 grid grid-cols-[1fr_auto_1fr] items-center gap-3 md:mt-6 md:gap-5">
+                <div className="grid justify-items-center gap-2">
+                  <MiniCrest label={match.homeTeam} />
+                  <p className="text-[11px] font-semibold md:text-sm">{match.homeTeam}</p>
                 </div>
-
-                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400">
-                  <div className="flex items-center gap-1.5">
-                    <HiOutlineCalendar className="text-red-500" />
-                    <span>{match.date}</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <HiOutlineClock className="text-amber-500" />
-                    <span>{match.time}</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <HiOutlineLocationMarker className="text-red-500" />
-                    <span className="text-xs">{match.venue}</span>
-                  </div>
-                </div>
-
-                <div className="lg:text-right">
-                  <div className="px-4 py-2 bg-red-600/10 border border-red-600/20 rounded-lg">
-                    <span className="text-lg font-bold text-amber-400">
-                      {match.score}
-                    </span>
-                  </div>
+                <p className="display text-3xl md:text-5xl">{match.score}</p>
+                <div className="grid justify-items-center gap-2">
+                  <MiniCrest label={match.awayTeam} />
+                  <p className="text-[11px] font-semibold md:text-sm">{match.awayTeam}</p>
                 </div>
               </div>
-            </motion.div>
+            </article>
           ))}
         </div>
+
+        <a href="#news" className="thin-btn mt-6 md:hidden">
+          Explore All <HiArrowUpRight />
+        </a>
       </div>
     </section>
   );

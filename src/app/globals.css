@@ -1,37 +1,86 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --primary: #dc2626;
-  --primary-dark: #b91c1c;
-  --secondary: #f59e0b;
-  --secondary-dark: #d97706;
-  --card-bg: #1a1a1a;
-  --card-border: #2a2a2a;
-  --muted: #a3a3a3;
-  --accent-gold: #d4af37;
+  --background: #ffffff;
+  --foreground: #0b1b2a;
+  --navy: #0b1b2a;
+  --soft: #edf7ff;
+  --line: #dbe9f5;
+  --muted: #7b8794;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-dark: var(--primary-dark);
-  --color-secondary: var(--secondary);
-  --color-secondary-dark: var(--secondary-dark);
-  --color-card-bg: var(--card-bg);
-  --color-card-border: var(--card-border);
-  --color-muted: var(--muted);
-  --color-accent-gold: var(--accent-gold);
-  --font-sans: "Poppins", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-bebas);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-inter), Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.display {
+  font-family: var(--font-bebas), Impact, sans-serif;
+  letter-spacing: 0;
+}
+
+.page-grid {
+  background-image:
+    linear-gradient(rgba(11, 27, 42, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 27, 42, 0.07) 1px, transparent 1px);
+  background-size: 110px 110px;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(145, 166, 184, 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(145, 166, 184, 0.13) 1px, transparent 1px);
+  background-size: 120px 120px;
+}
+
+.container-wide {
+  width: min(100% - 56px, 1380px);
+  margin-inline: auto;
+}
+
+.thin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  height: 42px;
+  border: 1px solid #cad7e2;
+  padding: 0 18px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0b1b2a;
+  background: #ffffff;
+}
+
+.stamp {
+  border: 1px dashed rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar {
@@ -39,14 +88,10 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dc2626;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #b91c1c;
+  background: #0b1b2a;
+  border-radius: 999px;
 }
