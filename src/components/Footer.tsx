@@ -1,10 +1,9 @@
-import Image from "next/image";
 import Newsletter from "./Newsletter";
 
 export default function Footer() {
   return (
     <footer id="subscribe" className="relative min-h-[380px] overflow-hidden bg-[#0b1b2a] text-white md:min-h-[470px] scroll-mt-20">
-      <Image src="/images/hero-bg.jpg" alt="Kids football training" fill sizes="100vw" className="object-cover" />
+      <img src="/images/hero-bg.jpg" alt="Kids football training" className="absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#0b1b2a] via-[#0b1b2a]/25 to-transparent" />
       <div className="container-wide absolute inset-x-0 bottom-0 px-4 md:px-0">
         <Newsletter />

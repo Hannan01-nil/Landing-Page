@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { HiArrowUpRight } from "react-icons/hi2";
 
 export default function About() {
@@ -18,8 +17,8 @@ export default function About() {
           Read More <HiArrowUpRight />
         </a>
       </div>
-      <div className="relative min-h-[400px] w-full md:min-h-[620px]">
-        <Image src="/images/football.jpg" alt="Players at stadium" fill sizes="50vw" className="object-cover" />
+      <div className="relative min-h-[400px] w-full overflow-hidden md:min-h-[620px]">
+        <img src="/images/football.jpg" alt="Players at stadium" className="absolute inset-0 h-full w-full object-cover" />
       </div>
     </section>
   );
