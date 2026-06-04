@@ -8,8 +8,8 @@ export default function Newsletter() {
       </h2>
       <form className="flex w-full max-w-xl bg-white">
         <label className="sr-only" htmlFor="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" className="h-10 flex-1 px-4 text-[12px] text-[#0b1b2a] outline-none md:h-12 md:px-5 md:text-sm" />
-        <button className="flex h-10 items-center gap-2 bg-[#0b1b2a] px-4 text-[11px] font-bold text-white md:h-12 md:gap-3 md:px-6 md:text-sm">
+        <input id="email" type="email" placeholder="Enter your email" suppressHydrationWarning className="h-10 flex-1 px-4 text-[12px] text-[#0b1b2a] outline-none md:h-12 md:px-5 md:text-sm" />
+        <button type="button" suppressHydrationWarning className="flex h-10 items-center gap-2 bg-[#0b1b2a] px-4 text-[11px] font-bold text-white md:h-12 md:gap-3 md:px-6 md:text-sm">
           Subscribe <span className="hidden md:inline">|</span> <HiArrowUpRight />
         </button>
       </form>

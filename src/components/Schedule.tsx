@@ -1,6 +1,5 @@
 import { HiArrowUpRight } from "react-icons/hi2";
 import type { Match } from "@/data/types";
-import { upcomingMatch } from "@/data/matches";
 
 const sportColors: Record<string, string> = {
   football: "bg-[#edf7ff]",
@@ -24,7 +23,8 @@ function MiniCrest({ label }: { label: string }) {
   );
 }
 
-function Countdown() {
+function Countdown({ upcomingMatch }: { upcomingMatch: { league: string; days: number; hours: number; minutes: number; seconds: number } | null }) {
+  if (!upcomingMatch) return null;
   const { days, hours, minutes, seconds } = upcomingMatch;
   const items = [
     [`${days}`, "Days"],
@@ -49,7 +49,7 @@ function Countdown() {
   );
 }
 
-export default function Schedule({ matches }: { matches: Match[] }) {
+export default function Schedule({ matches, upcomingMatch }: { matches: Match[]; upcomingMatch: { league: string; days: number; hours: number; minutes: number; seconds: number } | null }) {
   return (
     <section id="matches" className="page-grid bg-white py-16 md:py-24 scroll-mt-20">
       <div className="container-wide">
@@ -64,7 +64,7 @@ export default function Schedule({ matches }: { matches: Match[] }) {
               Explore All <HiArrowUpRight />
             </a>
           </div>
-          <Countdown />
+          <Countdown upcomingMatch={upcomingMatch} />
         </div>
 
         <div className="mt-10 grid gap-4 md:mt-14 md:gap-6 md:grid-cols-2 lg:grid-cols-4">

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { HiPlay } from "react-icons/hi2";
 import type { Video } from "@/data/types";
-import { featuredVideo } from "@/data/videos";
 
 export default function Videos({ videos }: { videos: Video[] }) {
+  const featured = videos.length > 0 ? videos[0] : null;
+
   return (
     <section className="bg-white py-12 md:py-14">
       <div className="container-wide">
@@ -17,9 +18,13 @@ export default function Videos({ videos }: { videos: Video[] }) {
 
         <div className="mt-8 grid gap-6 md:mt-12 md:gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div className="relative min-h-[280px] overflow-hidden md:min-h-[430px]">
-            <Image src={featuredVideo.image} alt={featuredVideo.alt} fill sizes="60vw" className="object-cover" />
+            {featured ? (
+              <Image src={featured.thumbnail} alt={featured.title} fill sizes="60vw" className="object-cover" />
+            ) : (
+              <div className="absolute inset-0 bg-gray-200" />
+            )}
             <div className="absolute inset-0 bg-[#0b1b2a]/35" />
-            <button aria-label="Play highlighted match" className="absolute left-1/2 top-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-[#0b1b2a] md:size-16">
+            <button aria-label="Play highlighted match" suppressHydrationWarning className="absolute left-1/2 top-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-[#0b1b2a] md:size-16">
               <HiPlay />
             </button>
           </div>

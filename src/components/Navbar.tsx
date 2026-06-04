@@ -38,12 +38,14 @@ export default function Navbar() {
             <div className="hidden items-center gap-3 md:flex">
               <button
                 aria-label="Search"
+                suppressHydrationWarning
                 className="grid size-9 place-items-center rounded-full border border-white/20 text-white/70 transition-colors hover:border-white/50 hover:text-white"
               >
                 <HiMagnifyingGlass className="text-sm" />
               </button>
               <button
                 aria-label="Cart"
+                suppressHydrationWarning
                 className="grid size-9 place-items-center rounded-full border border-white/20 text-white/70 transition-colors hover:border-white/50 hover:text-white"
               >
                 <HiShoppingCart className="text-sm" />
@@ -51,6 +53,7 @@ export default function Navbar() {
             </div>
             <button
               aria-label="Open menu"
+              suppressHydrationWarning
               className="grid size-9 place-items-center rounded-full bg-white text-[#0b1b2a] transition-colors hover:bg-white/90 md:hidden"
               onClick={() => setOpen(true)}
             >
@@ -72,6 +75,7 @@ export default function Navbar() {
             </a>
             <button
               aria-label="Close menu"
+              suppressHydrationWarning
               className="grid size-9 place-items-center rounded-full bg-white text-[#0b1b2a]"
               onClick={() => setOpen(false)}
             >
