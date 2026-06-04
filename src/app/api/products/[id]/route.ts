@@ -14,7 +14,7 @@ export async function PUT(
     const body = await request.json();
     const data = productSchema.parse(body);
     await connectDB();
-    const product = await Product.findByIdAndUpdate(id, data, { new: true });
+    const product = await Product.findByIdAndUpdate(id, data, { returnDocument: "after" });
     if (!product) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json(product);
   } catch {

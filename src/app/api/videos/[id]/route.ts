@@ -14,7 +14,7 @@ export async function PUT(
     const body = await request.json();
     const data = videoSchema.parse(body);
     await connectDB();
-    const video = await Video.findByIdAndUpdate(id, data, { new: true });
+    const video = await Video.findByIdAndUpdate(id, data, { returnDocument: "after" });
     if (!video) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json(video);
   } catch {

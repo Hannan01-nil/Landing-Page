@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { HiPlus, HiPencil, HiTrash } from "react-icons/hi2";
+import { useToast } from "@/components/Toast";
 
 interface Stat {
   _id: string;
@@ -13,6 +14,7 @@ interface Stat {
 const defaultForm = { value: "", label: "", description: "" };
 
 export default function StatsPage() {
+  const { confirm } = useToast();
   const [items, setItems] = useState<Stat[]>([]);
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState<Stat | null>(null);
@@ -38,7 +40,7 @@ export default function StatsPage() {
   }
 
   async function handleDelete(id: string) {
-    if (!confirm("Delete this stat?")) return;
+    if (!(await confirm("Delete this stat?"))) return;
     await fetch(`/api/stats/${id}`, { method: "DELETE" });
     fetchItems();
   }

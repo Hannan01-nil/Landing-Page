@@ -2,22 +2,22 @@ import Image from "next/image";
 import { HiArrowUpRight } from "react-icons/hi2";
 import type { Product } from "@/data/types";
 
-export default function Products({ products }: { products: Product[] }) {
+export default function Products({ products, sectionTitle, sectionDescription, ctaText, ctaLink }: { products: Product[]; sectionTitle?: string; sectionDescription?: string; ctaText?: string; ctaLink?: string }) {
+  const titleParts = (sectionTitle || "Top products\n✳ in our listing").split("\n");
   return (
     <section id="products" className="page-grid bg-white pt-10 md:pt-12 scroll-mt-20">
       <div className="container-wide">
         <div className="grid gap-6 lg:grid-cols-[1fr_0.8fr_auto] lg:items-center lg:gap-8">
           <h2 className="display text-4xl leading-[0.95] md:text-6xl">
-            Top products
-            <br />✳ in our listing
+            {titleParts.map((part, i) => (
+              <span key={i}>{part}<br /></span>
+            ))}
           </h2>
           <p className="text-[12px] leading-6 text-[#9aa4b1] md:text-sm md:leading-7">
-            Explore our top products, meticulously selected for their quality
-            and innovation. Each item promises exceptional value and
-            performance.
+            {sectionDescription || "Explore our top products, meticulously selected for their quality and innovation. Each item promises exceptional value and performance."}
           </p>
-          <a href="#subscribe" className="thin-btn">
-            Explore All <HiArrowUpRight />
+          <a href={ctaLink || "#subscribe"} className="thin-btn">
+            {ctaText || "Explore All"} <HiArrowUpRight />
           </a>
         </div>
       </div>
