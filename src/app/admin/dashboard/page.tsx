@@ -3,15 +3,14 @@
 import Link from "next/link";
 
 const cards = [
-  { label: "Matches", href: "/admin/matches", desc: "Manage match schedule and results" },
-  { label: "Upcoming Match", href: "/admin/upcoming-match", desc: "Edit upcoming match countdown" },
-  { label: "Videos", href: "/admin/videos", desc: "Manage video list" },
-  { label: "Featured Video", href: "/admin/featured-video", desc: "Edit featured highlight video" },
-  { label: "News", href: "/admin/news", desc: "Manage news articles" },
+  { label: "Home", href: "/admin/home", desc: "Edit hero section content" },
+  { label: "Matches", href: "/admin/matches", desc: "Manage match schedule and upcoming match" },
+  { label: "Highlighted Match", href: "/admin/highlight-match", desc: "Manage videos and section settings" },
+  { label: "Latest News", href: "/admin/news", desc: "Manage news articles" },
+  { label: "About", href: "/admin/about", desc: "Edit about section content" },
   { label: "Stats", href: "/admin/stats", desc: "Manage statistics" },
   { label: "Products", href: "/admin/products", desc: "Manage product listings" },
-  { label: "Hero", href: "/admin/hero", desc: "Edit hero section content" },
-  { label: "About", href: "/admin/about", desc: "Edit about section content" },
+  { label: "Subscribe", href: "/admin/subscribers", desc: "View subscribers and edit form" },
 ];
 
 export default function DashboardPage() {

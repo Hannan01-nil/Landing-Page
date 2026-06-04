@@ -8,6 +8,11 @@ import { Stat } from "../app/lib/models/stat";
 import { Product } from "../app/lib/models/product";
 import { Hero } from "../app/lib/models/hero";
 import { About } from "../app/lib/models/about";
+import { MatchSection } from "../app/lib/models/matchSection";
+import { HighlightSection } from "../app/lib/models/highlightSection";
+import { NewsSection } from "../app/lib/models/newsSection";
+import { ProductSection } from "../app/lib/models/productSection";
+import { SubscribeSection } from "../app/lib/models/subscribeSection";
 import { Admin } from "../app/lib/models/admin";
 import bcrypt from "bcryptjs";
 
@@ -107,6 +112,57 @@ async function seed() {
   } else {
     console.log("• Products already exist");
   }
+
+  // Seed hero section
+  await Hero.findOneAndUpdate({}, {
+    badge: "Introducing\nKhelo\nSporting",
+    badgeMobile: "Introducing Khelo Sporting",
+    titleFirst: "S",
+    titleMiddle: "portin",
+    titleLast: "g",
+    description: "We vehemently condemn and disapprove of individuals who are swayed and demoralized by the allure of momentary pleasures.",
+    ctaText: "Book A Ticket",
+    ctaLink: "#matches",
+    image: "/images/football.jpg",
+  }, { upsert: true });
+  console.log("✓ Seeded hero section");
+
+  // Seed about section
+  await About.findOneAndUpdate({}, {
+    badge: "⊕ About Us",
+    title: "Who we are",
+    description: "Khelo Sporting Club is a premier multi-sport community dedicated to fostering athletic excellence, teamwork, and a lifelong passion for sports. From football and cricket to basketball and tennis, we provide world-class facilities, expert coaching, and a vibrant community of athletes at every level.",
+    image: "/images/football.jpg",
+    ctaText: "Read More",
+    ctaLink: "#products",
+  }, { upsert: true });
+  console.log("✓ Seeded about section");
+
+  // Seed section settings
+  await MatchSection.findOneAndUpdate({}, { title: "Khelo sporting info\nand updates" }, { upsert: true });
+  console.log("✓ Seeded match section");
+
+  await HighlightSection.findOneAndUpdate({}, {
+    title: "Highlighted Match",
+    description: "An exciting match with top teams, thrilling action, and unforgettable moments.",
+    featuredImage: "/images/blog-1.jpg",
+    featuredAlt: "Highlighted match",
+  }, { upsert: true });
+  console.log("✓ Seeded highlight section");
+
+  await NewsSection.findOneAndUpdate({}, { title: "Latest News", ctaText: "See All News", ctaLink: "#about" }, { upsert: true });
+  console.log("✓ Seeded news section");
+
+  await ProductSection.findOneAndUpdate({}, {
+    title: "Top products\n✳ in our listing",
+    description: "Explore our top products, meticulously selected for their quality and innovation. Each item promises exceptional value and performance.",
+    ctaText: "Explore All",
+    ctaLink: "#subscribe",
+  }, { upsert: true });
+  console.log("✓ Seeded product section");
+
+  await SubscribeSection.findOneAndUpdate({}, { title: "Subscribe to our newsletter", placeholder: "Enter your email", buttonText: "Subscribe" }, { upsert: true });
+  console.log("✓ Seeded subscribe section");
 
   console.log("\n✅ Seed complete!");
   process.exit(0);

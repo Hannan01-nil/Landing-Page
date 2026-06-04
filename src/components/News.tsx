@@ -2,14 +2,14 @@ import Image from "next/image";
 import { HiArrowUpRight } from "react-icons/hi2";
 import type { NewsArticle } from "@/data/types";
 
-export default function News({ articles }: { articles: NewsArticle[] }) {
+export default function News({ articles, sectionTitle, ctaText, ctaLink }: { articles: NewsArticle[]; sectionTitle?: string; ctaText?: string; ctaLink?: string }) {
   return (
     <section id="news" className="page-grid bg-white py-16 md:py-24 scroll-mt-20">
       <div className="container-wide">
         <div className="flex items-center justify-between">
-          <h2 className="display text-4xl leading-none md:text-6xl">Latest News</h2>
-          <a href="#about" className="thin-btn">
-            See All News <HiArrowUpRight />
+          <h2 className="display text-4xl leading-none md:text-6xl">{sectionTitle || "Latest News"}</h2>
+          <a href={ctaLink || "#about"} className="thin-btn">
+            {ctaText || "See All News"} <HiArrowUpRight />
           </a>
         </div>
 

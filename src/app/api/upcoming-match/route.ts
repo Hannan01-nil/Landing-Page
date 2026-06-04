@@ -16,7 +16,7 @@ export async function PUT(request: NextRequest) {
     const body = await request.json();
     const data = upcomingMatchSchema.parse(body);
     await connectDB();
-    const match = await UpcomingMatch.findOneAndUpdate({}, data, { upsert: true, new: true });
+    const match = await UpcomingMatch.findOneAndUpdate({}, data, { upsert: true, returnDocument: "after" });
     return NextResponse.json(match);
   } catch {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });

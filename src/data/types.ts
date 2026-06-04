@@ -22,6 +22,7 @@ export interface NewsArticle {
 }
 
 export interface Stat {
+  _id?: string;
   value: string;
   label: string;
   description: string;

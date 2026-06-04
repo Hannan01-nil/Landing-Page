@@ -14,7 +14,7 @@ export async function PUT(
     const body = await request.json();
     const data = statSchema.parse(body);
     await connectDB();
-    const stat = await Stat.findByIdAndUpdate(id, data, { new: true });
+    const stat = await Stat.findByIdAndUpdate(id, data, { returnDocument: "after" });
     if (!stat) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json(stat);
   } catch {

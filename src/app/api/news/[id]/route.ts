@@ -14,7 +14,7 @@ export async function PUT(
     const body = await request.json();
     const data = newsArticleSchema.parse(body);
     await connectDB();
-    const article = await NewsArticle.findByIdAndUpdate(id, data, { new: true });
+    const article = await NewsArticle.findByIdAndUpdate(id, data, { returnDocument: "after" });
     if (!article) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json(article);
   } catch {

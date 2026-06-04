@@ -154,3 +154,423 @@ https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
     at handleErrors (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
     at processMessage (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14014:21)
     at WebSocket.handleMessage (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13951:21)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/images/cricket.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[browser] Image with src "/images/cricket.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Image with src "/images/blog-2.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Encountered two children with the same key, `Total Matches`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. 
+    at <unknown> (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4104:33)
+    at runWithFiberInDEV (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at warnOnInvalidKey (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4103:21)
+    at reconcileChildrenArray (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4129:160)
+    at reconcileChildFibersImpl (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4236:51)
+    at <unknown> (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4261:39)
+    at reconcileChildren (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:5898:51)
+    at beginWork (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:1573)
+    at runWithFiberInDEV (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:4104:33)
+[browser] Image with src "/images/cricket.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead. 
+    at <unknown> (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10139:29)
+    at runWithFiberInDEV (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at warnAboutUpdateOnNotYetMountedFiberInDEV (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10138:17)
+    at getRootForUpdatedFiber (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:2970:132)
+    at enqueueConcurrentHookUpdate (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:2951:16)
+    at dispatchOptimisticSetState (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:5661:38)
+    at startTransition (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:5467:9)
+    at nextDispatch (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:962:13)
+    at dispatchAppRouterAction (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:922:5)
+    at <unknown> (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:11923:61)
+    at startTransition (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:1279:31)
+    at Object.hmrRefresh (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:11922:40)
+    at <unknown> (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14090:64)
+    at startTransition (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:1279:31)
+    at processMessage (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:14089:44)
+    at WebSocket.handleMessage (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13458:52) (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10139:29)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+⨯ The requested resource isn't a valid image for /images/ received null
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Image with src "/images/cricket.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Image with src "/images/cricket.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+⚠ Fast Refresh had to perform a full reload when ./src/app/admin/layout.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ ./src/app/admin/layout.tsx:75:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m73 |[0m     </div>
+  [90m74 |[0m   );
+[31m[1m>[0m [90m75 |[0m }
+  [90m   |[0m [31m[1m^[0m
+  [90m76 |[0m
+  [90m77 |[0m [36mfunction[0m [33mAdminLayoutWrapper[0m({ children }: { children: [33mReact[0m.[33mReactNode[0m }) {
+  [90m78 |[0m   [36mreturn[0m <[33mToastProvider[0m><[33mAdminLayoutInner[0m>{children}<[35m/AdminLayoutInner></ToastProvider[0m>;
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/layout.tsx [Client Component Browser]
+    ./src/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/layout.tsx [Client Component SSR]
+    ./src/app/admin/layout.tsx [Server Component]
+
+
+⨯ ./src/app/admin/layout.tsx:75:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m73 |[0m     </div>
+  [90m74 |[0m   );
+[31m[1m>[0m [90m75 |[0m }
+  [90m   |[0m [31m[1m^[0m
+  [90m76 |[0m
+  [90m77 |[0m [36mfunction[0m [33mAdminLayoutWrapper[0m({ children }: { children: [33mReact[0m.[33mReactNode[0m }) {
+  [90m78 |[0m   [36mreturn[0m <[33mToastProvider[0m><[33mAdminLayoutInner[0m>{children}<[35m/AdminLayoutInner></ToastProvider[0m>;
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/layout.tsx [Client Component Browser]
+    ./src/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/layout.tsx [Client Component SSR]
+    ./src/app/admin/layout.tsx [Server Component]
+
+
+⨯ ./src/app/admin/layout.tsx:75:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  [90m73 |[0m     </div>
+  [90m74 |[0m   );
+[31m[1m>[0m [90m75 |[0m }
+  [90m   |[0m [31m[1m^[0m
+  [90m76 |[0m
+  [90m77 |[0m [36mfunction[0m [33mAdminLayoutWrapper[0m({ children }: { children: [33mReact[0m.[33mReactNode[0m }) {
+  [90m78 |[0m   [36mreturn[0m <[33mToastProvider[0m><[33mAdminLayoutInner[0m>{children}<[35m/AdminLayoutInner></ToastProvider[0m>;
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/layout.tsx [Client Component Browser]
+    ./src/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/layout.tsx [Client Component SSR]
+    ./src/app/admin/layout.tsx [Server Component]
+
+
+[browser] Uncaught Error: ./src/app/admin/layout.tsx:75:1
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  73 |     </div>
+  74 |   );
+> 75 | }
+     | ^
+  76 |
+  77 | function AdminLayoutWrapper({ children }: { children: React.ReactNode }) {
+  78 |   return <ToastProvider><AdminLayoutInner>{children}</AdminLayoutInner></ToastProvider>;
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/layout.tsx [Client Component Browser]
+    ./src/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/layout.tsx [Client Component SSR]
+    ./src/app/admin/layout.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/app/admin/layout.tsx:75:1)
+    at <unknown> (Error: (./src/app/admin/layout.tsx:75:1)
+⨯ ./src/app/admin/layout.tsx:92:1
+Expected '}', got '<eof>'
+  [90m90 |[0m     router.push([32m"/admin/login"[0m);
+  [90m91 |[0m   }
+[31m[1m>[0m [90m92 |[0m
+  [90m   |[0m [31m[1m^[0m
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/layout.tsx [Client Component Browser]
+    ./src/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/layout.tsx [Client Component SSR]
+    ./src/app/admin/layout.tsx [Server Component]
+
+
+[browser] Uncaught Error: ./src/app/admin/layout.tsx:92:1
+Expected '}', got '<eof>'
+  90 |     router.push("/admin/login");
+  91 |   }
+> 92 |
+     | ^
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/layout.tsx [Client Component Browser]
+    ./src/app/admin/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/layout.tsx [Client Component SSR]
+    ./src/app/admin/layout.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/app/admin/layout.tsx:92:1)
+    at <unknown> (Error: (./src/app/admin/layout.tsx:92:1)
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/admin/sub..." notFound={{...}} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/admin/sub..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                <SegmentViewNode type="layout" pagePath="admin/layo...">
+                  <SegmentTrieNode>
+                  <script>
+                  <script>
+                  <script>
+                  <script>
+                  <script>
+                  <ClientSegmentRoot Component={function AdminLayoutInner} slots={{children:{...}}} ...>
+                    <AdminLayoutInner params={Promise}>
+                      <ToastProvider>
+                        <div className="flex min-h...">
+                          <aside className="fixed inse...">
+                            <div>
+                            <nav>
+                            <div className="absolute b...">
+                              <button
+                                onClick={function handleLogout}
+                                className="flex w-full items-center gap-2 rounded px-3 py-2 text-sm text-white/60 hove..."
+-                               fdprocessedid="swsunn"
+                              >
+                          ...
+                            <SubscribersPage params={Promise} searchParams={Promise}>
+                              <div className="space-y-8">
+                                <div className="rounded-lg...">
+                                  <h3>
+                                  <input
+                                    value="Subscribe to our newsletter"
+                                    onChange={function onChange}
+                                    placeholder="Title"
+                                    className="w-full rounded border px-3 py-2 text-sm"
+-                                   fdprocessedid="7dd45a"
+                                  >
+                                  <div className="flex gap-2">
+                                    <input
+                                      value="Enter your email"
+                                      onChange={function onChange}
+                                      placeholder="Input Placeholder"
+                                      className="flex-1 rounded border px-3 py-2 text-sm"
+-                                     fdprocessedid="hzdere"
+                                    >
+                                    <input
+                                      value="Subscribe"
+                                      onChange={function onChange}
+                                      placeholder="Button Text"
+                                      className="flex-1 rounded border px-3 py-2 text-sm"
+-                                     fdprocessedid="9dy9qh"
+                                    >
+                                  <button
+                                    onClick={function saveSection}
+                                    className="rounded bg-[#0c1b2a] px-4 py-2 text-sm text-white"
+-                                   fdprocessedid="qn8rzd"
+                                  >
++                                   Save Settings
+                                ...
++                       <div className="fixed right-4 top-4 z-[100] flex flex-col gap-2">
+-                       <script id="_R_">
+              ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3318:56)
+    at beginWork (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+    at div (<anonymous>)
+    at ToastProvider (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/src_0-0y66d._.js:107:477)
+    at AdminLayoutInner (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/src_0-0y66d._.js:275:214)
+    at ClientSegmentRoot (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1e9_p6y._.js:4510:50)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Image with src "/images/blog-3.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+        <HTTPAccessFallbackErrorBoundary pathname="/admin/hig..." notFound={{...}} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <InnerLayoutRouter url="/admin/hig..." tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                <SegmentViewNode type="layout" pagePath="admin/layo...">
+                  <SegmentTrieNode>
+                  <script>
+                  <script>
+                  <script>
+                  <script>
+                  <script>
+                  <ClientSegmentRoot Component={function AdminLayoutInner} slots={{children:{...}}} ...>
+                    <AdminLayoutInner params={Promise}>
+                      <ToastProvider>
+                        <div>
++                       <div className="fixed right-4 top-4 z-[100] flex flex-col gap-2">
+-                       <script id="_R_">
+              ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3318:56)
+    at beginWork (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:918)
+    at runWithFiberInDEV (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+    at div (<anonymous>)
+    at ToastProvider (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/src_0-0y66d._.js:107:477)
+    at AdminLayoutInner (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/src_0-0y66d._.js:275:214)
+    at ClientSegmentRoot (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1e9_p6y._.js:4510:50)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:30064) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Image with src "/images/cricket.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://C:/Users/Mohamed Hannan/Documents/PROJECTS/Landing_page/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477:13)

@@ -14,7 +14,7 @@ export async function PUT(
     const body = await request.json();
     const data = matchSchema.parse(body);
     await connectDB();
-    const match = await Match.findByIdAndUpdate(id, data, { new: true });
+    const match = await Match.findByIdAndUpdate(id, data, { returnDocument: "after" });
     if (!match) return NextResponse.json({ error: "Not found" }, { status: 404 });
     return NextResponse.json(match);
   } catch {

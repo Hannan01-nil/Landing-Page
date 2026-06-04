@@ -49,16 +49,17 @@ function Countdown({ upcomingMatch }: { upcomingMatch: { league: string; days: n
   );
 }
 
-export default function Schedule({ matches, upcomingMatch }: { matches: Match[]; upcomingMatch: { league: string; days: number; hours: number; minutes: number; seconds: number } | null }) {
+export default function Schedule({ matches, upcomingMatch, sectionTitle }: { matches: Match[]; upcomingMatch: { league: string; days: number; hours: number; minutes: number; seconds: number } | null; sectionTitle?: string }) {
+  const titleParts = (sectionTitle || "Khelo sporting info\nand updates").split("\n");
   return (
     <section id="matches" className="page-grid bg-white py-16 md:py-24 scroll-mt-20">
       <div className="container-wide">
         <div className="grid gap-6 lg:grid-cols-[0.55fr_1fr] lg:items-start lg:gap-10">
           <div className="flex items-end gap-7">
             <h2 className="display text-4xl leading-[0.95] text-[#0b1b2a] md:text-6xl">
-              Khelo sporting info
-              <br />
-              and updates
+              {titleParts.map((part, i) => (
+                <span key={i}>{part}<br /></span>
+              ))}
             </h2>
             <a href="#news" className="thin-btn mb-2 hidden md:inline-flex">
               Explore All <HiArrowUpRight />
