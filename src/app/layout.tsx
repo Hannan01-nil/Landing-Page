@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "Khelo - Sports & Recreation Hub",
   description:
     "Khelo Sporting Club - Your ultimate destination for sports, training, matches, and community.",
+  icons: {
+    icon: "/khelo.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({

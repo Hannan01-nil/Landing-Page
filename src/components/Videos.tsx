@@ -1,25 +1,28 @@
 import Image from "next/image";
 import { HiPlay } from "react-icons/hi2";
 import type { Video } from "@/data/types";
-import { featuredVideo } from "@/data/videos";
 
-export default function Videos({ videos }: { videos: Video[] }) {
+export default function Videos({ videos, sectionTitle, sectionDescription, featuredImage, featuredAlt }: { videos: Video[]; sectionTitle?: string; sectionDescription?: string; featuredImage?: string; featuredAlt?: string }) {
+
   return (
     <section className="bg-white py-12 md:py-14">
       <div className="container-wide">
         <div className="mx-auto max-w-xl text-center">
-          <h2 className="display text-4xl leading-none md:text-6xl">Highlighted Match</h2>
+          <h2 className="display text-4xl leading-none md:text-6xl">{sectionTitle || "Highlighted Match"}</h2>
           <p className="mt-3 text-xs leading-5 text-[#586575] md:mt-4 md:text-sm md:leading-6">
-            An exciting match with top teams, thrilling action, and
-            unforgettable moments.
+            {sectionDescription || "An exciting match with top teams, thrilling action, and unforgettable moments."}
           </p>
         </div>
 
         <div className="mt-8 grid gap-6 md:mt-12 md:gap-8 lg:grid-cols-[1.5fr_1fr]">
           <div className="relative min-h-[280px] overflow-hidden md:min-h-[430px]">
-            <Image src={featuredVideo.image} alt={featuredVideo.alt} fill sizes="60vw" className="object-cover" />
+            {featuredImage ? (
+              <Image src={featuredImage} alt={featuredAlt || "Highlighted match"} fill sizes="60vw" className="object-cover" />
+            ) : (
+              <div className="absolute inset-0 bg-gray-200" />
+            )}
             <div className="absolute inset-0 bg-[#0b1b2a]/35" />
-            <button aria-label="Play highlighted match" className="absolute left-1/2 top-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-[#0b1b2a] md:size-16">
+            <button aria-label="Play highlighted match" suppressHydrationWarning className="absolute left-1/2 top-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-[#0b1b2a] md:size-16">
               <HiPlay />
             </button>
           </div>
