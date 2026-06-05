@@ -67,3 +67,29 @@ export const loginSchema = z.object({
   email: z.string().min(1),
   password: z.string().min(1),
 });
+
+export const seoEntrySchema = z.object({
+  route: z.string().min(1),
+  title: z.string().optional().default(""),
+  description: z.string().optional().default(""),
+  ogImage: z.string().optional().default(""),
+});
+
+export const seoSchema = z.object({
+  entries: z.array(seoEntrySchema),
+});
+
+export const geoSchema = z.object({
+  name: z.string().optional().default("Khelo Sporting Club"),
+  description: z.string().optional().default(""),
+  logo: z.string().optional().default("/khelo.png"),
+  url: z.string().optional().default(""),
+  foundingYear: z.number().optional(),
+  sameAs: z.array(z.string()).optional().default([]),
+});
+
+export const faqSchema = z.object({
+  question: z.string().min(1),
+  answer: z.string().min(1),
+  order: z.number().optional().default(0),
+});

@@ -1,14 +1,18 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { HiBars3, HiMagnifyingGlass, HiShoppingCart, HiXMark } from "react-icons/hi2";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Matches", href: "#matches" },
-  { label: "News", href: "#news" },
-  { label: "About", href: "#about" },
-  { label: "Subscribe", href: "#subscribe" },
+  { label: "Home", href: "/" },
+  { label: "Matches", href: "/matches" },
+  { label: "Highlights", href: "/videos" },
+  { label: "News", href: "/news" },
+  { label: "Stats", href: "/stats" },
+  { label: "Products", href: "/products" },
+  { label: "About", href: "/about" },
+  { label: "Subscribe", href: "/subscribe" },
 ];
 
 export default function Navbar() {
@@ -18,19 +22,19 @@ export default function Navbar() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 h-20 bg-[#0b1b2a]/95 backdrop-blur-sm">
         <div className="container-wide flex h-full items-center justify-between">
-          <a href="#home" className="display text-4xl leading-none text-white md:text-5xl">
+          <Link href="/" className="display text-4xl leading-none text-white md:text-5xl">
             K
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-8 text-sm font-semibold text-white/70 md:flex">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="transition-colors hover:text-white"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -66,13 +70,13 @@ export default function Navbar() {
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-[#0b1b2a] text-white md:hidden">
           <div className="flex h-20 items-center justify-between px-7">
-            <a
-              href="#home"
+            <Link
+              href="/"
               className="display text-4xl leading-none"
               onClick={() => setOpen(false)}
             >
               K
-            </a>
+            </Link>
             <button
               aria-label="Close menu"
               suppressHydrationWarning
@@ -84,14 +88,14 @@ export default function Navbar() {
           </div>
           <nav className="flex flex-1 flex-col items-center justify-center gap-8 text-3xl">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="display transition-colors hover:text-white/60"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
