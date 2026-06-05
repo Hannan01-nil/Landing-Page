@@ -16,6 +16,9 @@ const sections = [
   { label: "Stats", href: "/admin/stats" },
   { label: "Products", href: "/admin/products" },
   { label: "Subscribe", href: "/admin/subscribers" },
+  { label: "SEO", href: "/admin/seo" },
+  { label: "GEO", href: "/admin/geo" },
+  { label: "FAQ", href: "/admin/faq" },
 ];
 
 function AdminLayoutInner({

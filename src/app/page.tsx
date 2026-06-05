@@ -1,36 +1,24 @@
-import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
-import Schedule from "@/components/Schedule";
-import Videos from "@/components/Videos";
-import News from "@/components/News";
-import About from "@/components/About";
-import Stats from "@/components/Stats";
-import Products from "@/components/Products";
-import Footer from "@/components/Footer";
-import { getMatches, getUpcomingMatch, getVideos, getNews, getStats, getProducts, getHero, getAbout, getMatchSection, getHighlightSection, getNewsSection, getProductSection, getSubscribeSection } from "@/app/lib/queries";
+import { getHero, getSeo } from "@/app/lib/queries";
 
 export const dynamic = "force-dynamic";
 
+export async function generateMetadata(): Promise<Metadata> {
+  const seo = await getSeo();
+  const entry = seo?.entries?.find((e: { route: string }) => e.route === "/");
+  return {
+    title: entry?.title || "Khelo - Sports & Recreation Hub",
+    description: entry?.description || "Khelo Sporting Club - Your ultimate destination for sports, training, matches, and community.",
+    openGraph: { images: [{ url: entry?.ogImage || "/khelo.png" }] },
+  };
+}
+
 export default async function Home() {
-  const [matches, videos, articles, stats, products, upcomingMatch, hero, about, matchSection, highlightSection, newsSection, productSection, subscribeSection] = await Promise.all([
-    getMatches(),
-    getVideos(),
-    getNews(),
-    getStats(),
-    getProducts(),
-    getUpcomingMatch(),
-    getHero(),
-    getAbout(),
-    getMatchSection(),
-    getHighlightSection(),
-    getNewsSection(),
-    getProductSection(),
-    getSubscribeSection(),
-  ]);
+  const hero = await getHero();
 
   return (
-    <main>
-      <Navbar />
+    <div className="-mt-20">
       <Hero
         badge={hero?.badge}
         badgeMobile={hero?.badgeMobile}
@@ -42,13 +30,6 @@ export default async function Home() {
         ctaLink={hero?.ctaLink}
         image={hero?.image}
       />
-      <Schedule matches={matches || []} upcomingMatch={upcomingMatch} sectionTitle={matchSection?.title} />
-      <Videos videos={videos || []} sectionTitle={highlightSection?.title} sectionDescription={highlightSection?.description} featuredImage={highlightSection?.featuredImage} featuredAlt={highlightSection?.featuredAlt} />
-      <News articles={articles || []} sectionTitle={newsSection?.title} ctaText={newsSection?.ctaText} ctaLink={newsSection?.ctaLink} />
-      <About badge={about?.badge} title={about?.title} description={about?.description} image={about?.image} ctaText={about?.ctaText} ctaLink={about?.ctaLink} />
-      <Stats stats={stats || []} />
-      <Products products={products || []} sectionTitle={productSection?.title} sectionDescription={productSection?.description} ctaText={productSection?.ctaText} ctaLink={productSection?.ctaLink} />
-      <Footer subscribeTitle={subscribeSection?.title} subscribePlaceholder={subscribeSection?.placeholder} subscribeButtonText={subscribeSection?.buttonText} />
-    </main>
+    </div>
   );
 }

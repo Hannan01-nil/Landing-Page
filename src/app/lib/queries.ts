@@ -12,6 +12,9 @@ import { HighlightSection } from "./models/highlightSection";
 import { NewsSection } from "./models/newsSection";
 import { ProductSection } from "./models/productSection";
 import { SubscribeSection } from "./models/subscribeSection";
+import { Seo } from "./models/seo";
+import { Geo } from "./models/geo";
+import { Faq } from "./models/faq";
 
 export async function getMatches() {
   await connectDB();
@@ -78,4 +81,21 @@ export async function getProductSection() {
 export async function getSubscribeSection() {
   await connectDB();
   return SubscribeSection.findOne().sort({ createdAt: -1 }).lean();
+}
+
+export async function getSeo() {
+  await connectDB();
+  const data = await Seo.findOne().sort({ createdAt: -1 }).lean();
+  return data || null;
+}
+
+export async function getGeo() {
+  await connectDB();
+  const data = await Geo.findOne().sort({ createdAt: -1 }).lean();
+  return data || null;
+}
+
+export async function getFaqs() {
+  await connectDB();
+  return Faq.find().sort({ order: 1, createdAt: -1 }).lean();
 }
